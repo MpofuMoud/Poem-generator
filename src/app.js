@@ -11,8 +11,6 @@ function generatePoem(event) {
   let poemElement = document.querySelector("#poem");
   poemElement.classList.remove("hidden");
   poemElement.innerHTML = `<div id="generating">⌛Generating a poem about ${promptInput.value}</div>`;
-
-  console.log("Generating poem..");
 }
 
 function displayPoem(response) {
