@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="/src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
       <header><h1>AI POEM GENERATOR</h1></header>
       <main>
-        <form>
+        <form id="form">
           <input
             type="text"
             placeholder="Enter the topic of the Poem"
@@ -18,12 +19,13 @@
             required
             autocomplete="off"
             class="prompt"
+            value=""
           />
           <input type="submit" class="submit-button" />
         </form>
         <div class="poem">
-          <h2>Poem name</h2>
-          <p>Poem</p>
+          <h2></h2>
+          <div id="poem">Poem</div>
         </div>
       </main>
 
