@@ -12,20 +12,23 @@
     <div class="container">
       <header><h1>AI POEM GENERATOR</h1></header>
       <main>
-        <form id="form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            value=""
-            id="prompt-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-wrapper">
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the Poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              value=""
+              id="prompt-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">ie. Flowers, Mom, love</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <script src="src/app.js"></script>

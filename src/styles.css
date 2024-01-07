@@ -15,14 +15,23 @@ h1 {
   margin: 120px auto;
   max-width: 600px;
 }
-
-form {
+.form-wrapper {
   padding: 30px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-  display: flex;
+
   margin-bottom: 30px;
   background-color: white;
+}
+.hint {
+  opacity: 0.7;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+form {
+  display: flex;
 }
 .prompt {
   padding: 16px;
@@ -54,6 +63,10 @@ form {
   line-height: 1.5;
   padding: 20px;
 }
+.hidden {
+  display: none;
+}
+
 a {
   color: #885df1;
 }
@@ -61,4 +74,17 @@ footer {
   margin: 30px;
   font-size: 13px;
   text-align: center;
+}
+#generating {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
